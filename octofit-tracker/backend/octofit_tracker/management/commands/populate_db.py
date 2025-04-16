@@ -3,6 +3,9 @@ from octofit_tracker.models import User, Team, Activity, Leaderboard, Workout
 from bson import ObjectId
 from datetime import timedelta
 
+# Debugging command loading
+print("populate_db command loaded successfully")
+
 class Command(BaseCommand):
     help = 'Populate the database with test data for users, teams, activities, leaderboard, and workouts'
 
